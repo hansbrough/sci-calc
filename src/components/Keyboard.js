@@ -4,7 +4,7 @@ import Key from './Key';
 
 const Keyboard = ({setKey}) => {
   // key values
-  const funcs = ['C','\xB1','%'];
+  const funcs = ['C','\xB1','%','\u232b'];
   const numbers = [1,2,3,4,5,6,7,8,9];
   const operators = ['+','-','*','/','='];
   const more = ['(',')'];

@@ -7,10 +7,6 @@ import Keyboard from './Keyboard';
 const Calculator = () => {
   const [exp, setExp] = useState(0);// the expression
 
-  useEffect(() => {
-    console.log("useEffect exp:",exp)
-  },[exp])
-
   // when display is 0, replace with empty str
   // removes '0' in preparation of expression building.
   const isZeroCheck = () => {
@@ -20,7 +16,7 @@ const Calculator = () => {
   };
 
   const handleKeyPress = (key) => {
-    console.log("handleKeyPress exp:",exp);
+    //console.log("handleKeyPress exp:",exp);
     isZeroCheck();
     switch(key) {
       case '=':
@@ -40,8 +36,11 @@ const Calculator = () => {
       case '\xB1':
         exp ? setExp(exp => `-(${exp})`) : setExp(0);
         break;
-      case `%`:
+      case '%':
         exp ? setExp(exp => `(${exp})/100`) : setExp(0);
+        break;
+      case '\u232b':
+        setExp(exp => exp.slice(0, -1));
         break;
       default:
         setExp(exp => `${exp}${key}`);

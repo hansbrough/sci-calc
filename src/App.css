@@ -33,12 +33,12 @@
   grid-template-columns: repeat(4, 5rem);
   grid-template-rows: repeat(5, 5rem);
   grid-template-areas:
-  "funcs-pad funcs-pad funcs-pad operator-pad"
+  "funcs-pad funcs-pad funcs-pad funcs-pad"
   "number-pad number-pad number-pad operator-pad"
   "number-pad number-pad number-pad operator-pad"
   "number-pad number-pad number-pad operator-pad"
   "number-pad number-pad number-pad operator-pad"
-  "more-pad more-pad more-pad more-pad";
+  "more-pad more-pad more-pad operator-pad";
 }
 
 .number-pad {
