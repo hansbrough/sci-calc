@@ -13,9 +13,9 @@
 .calculator-container {
   border: 1px solid;
   border-radius: .5rem;
-
-  margin: 2rem;
+  margin: 2rem auto;
   padding: .5rem;
+  width: 20rem;
 }
 
 .calculator-display {
@@ -25,8 +25,20 @@
 }
 
 .calculator-keyboard {
-  border: ridge;
+  border: 1px solid gray;
   display: grid;
+  justify-content: center;
+  align-content: center;
+
+  grid-template-columns: repeat(4, 5rem);
+  grid-template-rows: repeat(5, 5rem);
+  grid-template-areas:
+  "funcs-pad funcs-pad funcs-pad operator-pad"
+  "number-pad number-pad number-pad operator-pad"
+  "number-pad number-pad number-pad operator-pad"
+  "number-pad number-pad number-pad operator-pad"
+  "number-pad number-pad number-pad operator-pad"
+  "more-pad more-pad more-pad more-pad";
 }
 
 .number-pad {
@@ -48,20 +60,6 @@
 
 .more-pad {
   grid-area: more-pad;
-}
-
-.calculator-keyboard {
-  padding-top: 0.3rem;
-  display: grid;
-  grid-template-columns: repeat(4, 5rem);
-  grid-template-rows: repeat(5, 5rem);
-  grid-template-areas:
-  "funcs-pad funcs-pad funcs-pad operator-pad"
-  "number-pad number-pad number-pad operator-pad"
-  "number-pad number-pad number-pad operator-pad"
-  "number-pad number-pad number-pad operator-pad"
-  "number-pad number-pad number-pad operator-pad"
-  "more-pad more-pad more-pad more-pad";
 }
 
 button {
