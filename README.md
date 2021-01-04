@@ -5,6 +5,8 @@ Built with React functional components and the mathjs package. Also supports bui
 ## Use
 Build a math expression w/the calculator UI and then evaluate it with the ```=``` sign.
 
+<img width="485" alt="Screen Shot 2021-01-04 at 1 54 28 PM" src="https://user-images.githubusercontent.com/658255/103584784-d7f2b300-4e96-11eb-8641-9e2491496d05.png">
+
 ## Notes
 1. Avoided use of the native JS ```eval()``` by using mathjs package.
 
