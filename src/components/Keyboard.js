@@ -7,7 +7,7 @@ const Keyboard = ({setKey}) => {
   const funcs = ['C','\xB1','%','\u232b'];
   const numbers = [1,2,3,4,5,6,7,8,9];
   const operators = ['+','-','*','/','='];
-  const more = ['(',')'];
+  const more = ['(',')','x\xB2'];
 
    return (
      <div className="calculator-keyboard">
